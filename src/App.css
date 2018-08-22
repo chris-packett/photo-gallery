@@ -4,7 +4,7 @@
 
 .App-header {
   background-color: #222;
-  height: 3em;
+  height: 3.5em;
   padding: 10px;
   color: white;
   display: flex;
@@ -43,3 +43,70 @@
   text-decoration: none;
   font-size: 1.25em;
 }
+
+.categories {
+  display: flex;
+  justify-content: center;
+  padding-top: 5em;
+}
+
+.categories img {
+  width: 35em;
+}
+
+.panda-category {
+  height: 31.25em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: .75em;
+  border: 1px solid #e2e2e2;
+}
+
+.panda-content {
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+}
+
+.panda-content a {
+  text-decoration: none;
+  color: rgb(54, 118, 217);
+  font-size: 1.75em;
+}
+
+.panda-content p {
+  text-align: start;
+  color: #696969;
+}
+
+.miniature-category {
+  height: 43em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: .75em;
+  border: 1px solid #e2e2e2;
+}
+
+.miniature-content {
+  width: 25em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1em;
+}
+
+.miniature-content a {
+  text-decoration: none;
+  color: rgb(54, 118, 217);
+  font-size: 1.75em;
+}
+
+.miniature-content p {
+  text-align: start;
+  color: #696969;
+}
+
