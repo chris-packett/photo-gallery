@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import photos from '../things.json'
+import data from '../things.json'
 
 class CategoryList extends Component {
     render() {
@@ -15,7 +15,7 @@ class CategoryList extends Component {
                         </p>
                     </div>
                     <div className="panda-image">
-                        <img src={photos.pandas.photos[0].imageURL} alt="panda" />
+                        <img src={data.pandas.photos[0].imageURL} alt="panda" />
                     </div>
                 </div>
                 <div className="miniature-category">
@@ -28,7 +28,7 @@ class CategoryList extends Component {
                         </p>
                     </div>
                     <div className="miniature-image">
-                        <img src={photos.miniatures.photos[0].imageURL} alt="miniature" />
+                        <img src={data.miniatures.photos[0].imageURL} alt="miniature" />
                     </div>
                 </div>
             </div>

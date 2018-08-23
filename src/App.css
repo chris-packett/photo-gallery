@@ -110,3 +110,59 @@
   color: #696969;
 }
 
+.category-title-and-description-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2em 3em;
+}
+
+.category-title {
+  color: #363636;
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 1.125;
+  margin: 0;
+}
+
+.category-description {
+  color: #4a4a4a;
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: .25em 0 0 0;
+  text-align: start;
+}
+
+.photos {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 0 2em 2em 2em;
+}
+
+.photo {
+  border: 1px solid #e2e2e2;
+  padding: 1.5em;
+  margin-bottom: 2em;
+}
+
+.photo-image img {
+  width: 32.5em;
+}
+
+.photo-title {
+  text-align: start;
+}
+
+.photos a {
+  text-decoration: none;  
+  color: rgb(54, 118, 217);
+  font-size: 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+
+
+
