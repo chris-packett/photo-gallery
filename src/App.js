@@ -5,25 +5,34 @@ import CategoryList from './components/CategoryList'
 import PhotoList from './components/PhotoList'
 import PhotoDetail from './components/PhotoDetail'
 import Nav from './components/Nav'
+import Breadcrumbs from 'react-router-dynamic-breadcrumbs'
+
+const routes = {
+  '/': 'Home',
+  '/:category': 'Photo List', 
+  '/:category/:id': 'Photo Details'
+}
+  
 
 class App extends Component {
   render() {
     return (
       <Router>
-        <div className="App">
-          <header className="App-header">
-            <div>
-              <h1>Photo Gallery</h1>
-              <h6>by Chris Packett</h6>
-            </div>
-            <Nav />
-          </header>
-          <Switch>
-            <Route path="/" exact component={CategoryList}/>
-            <Route path="/:category" exact component={PhotoList}/>
-            <Route path="/:category/:id" exact component={PhotoDetail}/>
-          </Switch>
-        </div>
+          <div className="App">
+            <header className="App-header">
+              <div>
+                <h1>Photo Gallery</h1>
+                <h6>by Chris Packett</h6>
+              </div>
+              <Nav />
+            </header>
+            <Breadcrumbs mappedRoutes={routes} />
+            <Switch>
+              <Route path="/" exact component={CategoryList}/>
+              <Route path="/:category" exact component={PhotoList}/>
+              <Route path="/:category/:id" exact component={PhotoDetail}/>
+            </Switch>
+          </div>
       </Router>
     );
   }

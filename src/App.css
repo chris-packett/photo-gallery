@@ -194,6 +194,31 @@
   line-height: 1.5;
 }
 
+.breadcrumb {
+  list-style: none;
+  display: flex;
+  margin: 1em 0 0 0;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: rgb(54, 118, 217);
+}
+
+.breadcrumb li {
+  margin-right: 1em;
+  color: #363636;
+}
+
+.breadcrumb li+li::before {
+  color: #b5b5b5;
+  content: "\0002f";
+  margin-right: 1em;
+}
+
 
 
 
